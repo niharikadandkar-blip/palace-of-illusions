@@ -1,0 +1,3501 @@
+/* ==========================================================================
+   THE PALACE OF ILLUSIONS — MASTER STYLESHEET (12 CHAMBERS)
+   Aesthetic: Ancient Indian Royal Palace fused with Fine Literary Editorial
+   Optimized for 1080p Classroom Projection, Zero Text Overlap & Interactive Hover
+   ========================================================================== */
+
+:root {
+  /* Core Indian Royal Palette */
+  --color-emerald-deep: #123C32;
+  --color-midnight-forest: #0B211D;
+  --color-antique-gold: #C5A15A;
+  --color-antique-gold-bright: #E2C27E;
+  --color-antique-gold-glow: rgba(197, 161, 90, 0.4);
+  --color-antique-gold-subtle: rgba(197, 161, 90, 0.15);
+  
+  --color-sandstone: #B78B65;
+  --color-sandstone-dark: #7A573B;
+  --color-sandstone-light: #D4AF8B;
+  --color-sandstone-shadow: rgba(45, 29, 18, 0.85);
+
+  --color-burgundy: #592B35;
+  --color-burgundy-dark: #3A181F;
+  --color-burgundy-glow: rgba(89, 43, 53, 0.45);
+
+  --color-parchment: #F2E8D5;
+  --color-parchment-soft: #E8DBC3;
+  --color-parchment-deep: #D5C3A5;
+  --color-parchment-text: #2A2117;
+
+  --color-ivory: #FFF9EE;
+  --color-ivory-muted: rgba(255, 249, 238, 0.78);
+  --color-ivory-dim: rgba(255, 249, 238, 0.45);
+
+  /* Typography Hierarchy with Complete Local Fallbacks */
+  --font-display: 'Cinzel Decorative', 'Georgia', 'Times New Roman', serif;
+  --font-heading: 'Cormorant Garamond', 'Garamond', 'Georgia', serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-accent: 'Marcellus', 'Cinzel Decorative', 'Georgia', serif;
+
+  /* Atmospheric Shadows & Glows */
+  --shadow-palace-depth: inset 0 0 120px rgba(11, 33, 29, 0.95);
+  --shadow-stone-pillar: 0 16px 48px rgba(0, 0, 0, 0.7);
+  --shadow-lamp-amber: 0 0 35px rgba(226, 194, 126, 0.45);
+  --shadow-card-elevated: 0 12px 36px -4px rgba(0, 0, 0, 0.65);
+
+  /* Cinematic Animation Curves */
+  --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-door-swing: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Base Reset & Projector Layout */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--color-midnight-forest);
+  color: var(--color-ivory);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Offline Embedded Indian Jali Screen Pattern */
+.jali-overlay {
+  background-image: radial-gradient(var(--color-antique-gold-glow) 1px, transparent 1px),
+                    radial-gradient(var(--color-antique-gold-subtle) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+/* Projector-Optimized Viewport Container */
+.palace-viewport {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: var(--color-midnight-forest);
+}
+
+/* ==========================================================================
+   ARCHITECTURAL FRAME & LINTELS
+   ========================================================================== */
+.palace-frame-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 20;
+  box-shadow: inset 0 0 100px rgba(11, 33, 29, 0.9),
+              inset 0 0 40px rgba(0, 0, 0, 0.95);
+  border: 1px solid rgba(197, 161, 90, 0.25);
+}
+
+.palace-top-lintel {
+  position: relative;
+  height: 48px;
+  background: linear-gradient(180deg, rgba(11, 33, 29, 0.98) 0%, rgba(18, 60, 50, 0.85) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(197, 161, 90, 0.25);
+  z-index: 25;
+  padding: 0 2rem;
+  flex-shrink: 0;
+}
+
+.palace-bottom-lintel {
+  position: relative;
+  height: 52px;
+  background: linear-gradient(0deg, rgba(11, 33, 29, 0.98) 0%, rgba(18, 60, 50, 0.85) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(197, 161, 90, 0.25);
+  z-index: 25;
+  padding: 0 2rem;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   CHAMBER 1: REVISED HERO ENTRANCE (ZERO OVERLAP WITH DOORS)
+   ========================================================================== */
+.hero-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  z-index: 10;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  transition: opacity 700ms var(--ease-cinematic), transform 1100ms var(--ease-cinematic);
+}
+
+.hero-background-layer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 30%;
+  transform: scale(1.02);
+  transition: transform 12s ease-out, filter 1100ms ease;
+  filter: brightness(0.85) contrast(1.05);
+}
+
+.hero-container.entering .hero-background-layer {
+  transform: scale(1.1);
+  filter: brightness(0.95) contrast(1.1);
+}
+
+.hero-atmosphere {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 65%, rgba(226, 194, 126, 0.15) 0%, rgba(18, 60, 50, 0.6) 50%, rgba(11, 33, 29, 0.95) 100%);
+  pointer-events: none;
+}
+
+/* Top Banner (Framed neatly above the doors) */
+.hero-top-banner {
+  position: relative;
+  z-index: 30;
+  text-align: center;
+  background: rgba(11, 33, 29, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(197, 161, 90, 0.3);
+  border-radius: 6px;
+  padding: 0.6rem 2rem;
+  max-width: 820px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.hero-supertitle {
+  font-family: var(--font-accent);
+  font-size: clamp(0.72rem, 1vw, 0.85rem);
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold);
+  margin-bottom: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.hero-supertitle::before,
+.hero-supertitle::after {
+  content: '❖';
+  font-size: 0.7rem;
+  color: var(--color-sandstone-light);
+}
+
+.hero-main-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.8vw, 3.4rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: var(--color-ivory);
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.9),
+               0 0 25px var(--color-antique-gold-glow);
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+
+.hero-subtitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1rem, 1.6vw, 1.35rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-parchment);
+  letter-spacing: 0.02em;
+}
+
+/* Center Stage (Doorway is prominent, fully visible) */
+.hero-center-stage {
+  position: relative;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+}
+
+.monumental-doorway-stage {
+  position: relative;
+  width: min(720px, 82vw);
+  height: min(440px, 52vh);
+  perspective: 1200px;
+  perspective-origin: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doorway-stone-arch {
+  position: absolute;
+  inset: -12px;
+  border: 12px solid var(--color-sandstone-dark);
+  border-bottom: none;
+  border-radius: 360px 360px 0 0;
+  box-shadow: 0 0 35px var(--color-sandstone-shadow),
+              inset 0 0 25px rgba(0, 0, 0, 0.9);
+  pointer-events: none;
+  z-index: 22;
+}
+
+.doorway-arch-inner-border {
+  position: absolute;
+  inset: -2px;
+  border: 2px solid var(--color-antique-gold);
+  border-bottom: none;
+  border-radius: 350px 350px 0 0;
+}
+
+.doorway-inner-light {
+  position: absolute;
+  inset: 0;
+  border-radius: 340px 340px 0 0;
+  background: radial-gradient(circle at 50% 70%, rgba(255, 220, 140, 0.95) 0%, rgba(197, 161, 90, 0.7) 40%, rgba(18, 60, 50, 0.9) 100%);
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.8),
+              0 0 80px rgba(226, 194, 126, 0.4);
+  overflow: hidden;
+  z-index: 2;
+}
+
+.inner-hall-preview {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.85;
+  filter: contrast(1.1);
+  transform: scale(1.05);
+  transition: transform 1200ms var(--ease-cinematic);
+}
+
+.hero-container.entering .inner-hall-preview {
+  transform: scale(1.15);
+}
+
+.door-leaf {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: linear-gradient(135deg, #382415 0%, #22140A 50%, #150C06 100%);
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.9),
+              inset 0 0 10px rgba(197, 161, 90, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.25rem 0.85rem;
+  transition: transform 1400ms var(--ease-door-swing), box-shadow 1400ms ease;
+  z-index: 10;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.door-left {
+  left: 0;
+  border-top-left-radius: 340px;
+  transform-origin: left center;
+  border-right: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.door-right {
+  right: 0;
+  border-top-right-radius: 340px;
+  transform-origin: right center;
+  border-left: 2px solid rgba(197, 161, 90, 0.4);
+}
+
+.door-open .door-left {
+  transform: rotateY(-74deg);
+  box-shadow: -15px 0 35px rgba(0, 0, 0, 0.85);
+}
+
+.door-open .door-right {
+  transform: rotateY(74deg);
+  box-shadow: 15px 0 35px rgba(0, 0, 0, 0.85);
+}
+
+.door-brass-band {
+  width: 100%;
+  height: 16px;
+  background: linear-gradient(90deg, #7A573B 0%, #C5A15A 50%, #7A573B 100%);
+  border-top: 1px solid rgba(255, 249, 238, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.brass-stud {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #FFF9EE 0%, #C5A15A 60%, #4D3319 100%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.door-ring-handle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 4px solid var(--color-antique-gold);
+  margin: 0 auto;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.9);
+  position: relative;
+}
+
+.doorway-crevice-glow {
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  width: 12px;
+  left: calc(50% - 6px);
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 230, 160, 0.9) 50%, transparent 100%);
+  box-shadow: 0 0 30px rgba(255, 220, 130, 0.85);
+  z-index: 12;
+  transition: opacity 600ms ease;
+  pointer-events: none;
+}
+
+.door-open .doorway-crevice-glow {
+  opacity: 0;
+}
+
+/* Bottom Action Dock (Clean, unobtrusive) */
+.hero-bottom-dock {
+  position: relative;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-actions-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.btn-palace-primary {
+  font-family: var(--font-accent);
+  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-ivory);
+  background: linear-gradient(180deg, var(--color-emerald-deep) 0%, var(--color-midnight-forest) 100%);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 4px;
+  padding: 0.85rem 2rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6),
+              inset 0 0 12px var(--color-antique-gold-subtle);
+  transition: transform 250ms var(--ease-cinematic),
+              box-shadow 250ms var(--ease-cinematic),
+              border-color 250ms ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.btn-palace-primary:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-antique-gold-bright);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.8),
+              0 0 24px var(--color-antique-gold-glow);
+}
+
+.btn-palace-secondary {
+  font-family: var(--font-body);
+  font-size: clamp(0.85rem, 1vw, 0.95rem);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--color-parchment);
+  background: rgba(18, 60, 50, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(197, 161, 90, 0.35);
+  border-radius: 4px;
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
+  transition: all 250ms ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-palace-secondary:hover {
+  background: rgba(18, 60, 50, 0.9);
+  border-color: var(--color-antique-gold);
+  color: var(--color-ivory);
+}
+
+.hero-keyboard-hint {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--color-ivory-dim);
+  text-transform: uppercase;
+}
+
+.keyboard-key {
+  display: inline-block;
+  padding: 0.15rem 0.4rem;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(197, 161, 90, 0.4);
+  border-radius: 3px;
+  color: var(--color-antique-gold);
+  font-family: monospace;
+  font-size: 0.72rem;
+}
+
+/* ==========================================================================
+   GENERIC CHAMBER CONTAINER (CHAMBERS 2 - 12)
+   ========================================================================== */
+.chamber-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.chamber-bg-cover {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7) contrast(1.1);
+  z-index: 1;
+}
+
+.chamber-dark-scrim {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(18, 60, 50, 0.88) 0%, rgba(11, 33, 29, 0.96) 85%);
+  z-index: 2;
+}
+
+.chamber-inner-box {
+  position: relative;
+  z-index: 5;
+  width: min(1160px, 94vw);
+  max-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.chamber-heading-wrap {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.chamber-kicker {
+  font-family: var(--font-accent);
+  font-size: 0.8rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold);
+  margin-bottom: 0.35rem;
+}
+
+.chamber-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.8vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-ivory);
+  letter-spacing: 0.04em;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.9);
+  line-height: 1.2;
+}
+
+.chamber-subtitle-text {
+  font-family: var(--font-heading);
+  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  font-style: italic;
+  color: var(--color-parchment);
+  margin-top: 0.35rem;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   CHAMBER 2: THE FIRST QUESTION & BEGINNER PRIMER
+   ========================================================================== */
+.chamber-two-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.75rem;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.chamber-two-backdrop {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(18, 60, 50, 0.88) 0%, rgba(11, 33, 29, 0.98) 85%);
+  z-index: 1;
+}
+
+.chamber-two-stage {
+  position: relative;
+  z-index: 5;
+  width: min(1180px, 95vw);
+  max-height: calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.chamber-two-header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.chamber-two-prompt {
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 2.3vw, 1.95rem);
+  font-weight: 600;
+  color: var(--color-parchment);
+  line-height: 1.3;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.9);
+}
+
+.chamber-two-split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 1.15rem;
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .chamber-two-split-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Left Column: Beginner's Primer Card */
+.beginner-primer-card {
+  background: linear-gradient(165deg, rgba(24, 70, 59, 0.85) 0%, rgba(11, 33, 29, 0.98) 100%);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 8px;
+  padding: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.75rem;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.8);
+}
+
+.primer-header-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-accent);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold);
+  border-bottom: 1px solid rgba(197, 161, 90, 0.25);
+  padding-bottom: 0.45rem;
+}
+
+.primer-story-points {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.primer-point-item {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+}
+
+.primer-step-num {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--color-antique-gold);
+  color: var(--color-antique-gold);
+  font-family: var(--font-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.primer-point-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-ivory);
+  margin-bottom: 0.15rem;
+}
+
+.primer-point-desc {
+  font-size: 0.82rem;
+  color: var(--color-parchment-soft);
+  line-height: 1.45;
+}
+
+.highlight-box {
+  background: rgba(18, 60, 50, 0.75);
+  border: 1px solid rgba(197, 161, 90, 0.35);
+  border-radius: 6px;
+  padding: 0.65rem;
+}
+
+.primer-portrait-trigger {
+  width: 100%;
+  justify-content: center;
+  padding: 0.55rem;
+  font-size: 0.82rem;
+}
+
+/* Right Column: Interactive Voice Cards */
+.beginner-interactive-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.column-kicker-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.column-kicker-text {
+  font-family: var(--font-accent);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--color-parchment-soft);
+}
+
+.reset-tally-btn {
+  background: transparent;
+  border: 1px solid rgba(197, 161, 90, 0.3);
+  color: var(--color-antique-gold);
+  border-radius: 3px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.72rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: all 200ms ease;
+}
+
+.reset-tally-btn:hover {
+  background: rgba(197, 161, 90, 0.2);
+  color: var(--color-ivory);
+}
+
+.beginner-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+@media (max-width: 600px) {
+  .beginner-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.beginner-voice-card {
+  background: linear-gradient(160deg, rgba(20, 60, 50, 0.75) 0%, rgba(11, 33, 29, 0.95) 100%);
+  border: 1px solid rgba(197, 161, 90, 0.3);
+  border-radius: 6px;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: all 200ms ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.45rem;
+}
+
+.beginner-voice-card:hover {
+  border-color: var(--color-antique-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+.beginner-voice-card.selected {
+  border-color: var(--color-antique-gold-bright);
+  box-shadow: 0 0 16px var(--color-antique-gold-glow);
+  background: linear-gradient(160deg, rgba(30, 85, 70, 0.85) 0%, rgba(11, 33, 29, 0.98) 100%);
+}
+
+.voice-card-top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+
+.voice-symbol-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.voice-symbol-glyph {
+  font-size: 1.25rem;
+}
+
+.voice-archetype-label {
+  font-family: var(--font-accent);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold);
+}
+
+.voice-card-heading {
+  font-family: var(--font-heading);
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: var(--color-ivory);
+  line-height: 1.25;
+}
+
+.voice-vote-btn {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  min-width: 42px;
+  transition: all 180ms ease;
+}
+
+.voice-vote-btn:hover {
+  background: var(--color-antique-gold);
+}
+
+.voice-vote-btn:hover .vote-count-number,
+.voice-vote-btn:hover .vote-count-text {
+  color: var(--color-midnight-forest);
+}
+
+.vote-count-number {
+  font-family: var(--font-accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-antique-gold-bright);
+}
+
+.vote-count-text {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  color: var(--color-sandstone-light);
+}
+
+.voice-perspectives-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.perspective-box {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 4px;
+  padding: 0.35rem 0.5rem;
+}
+
+.perspective-tag {
+  font-family: var(--font-accent);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  color: var(--color-sandstone-light);
+  margin-bottom: 0.1rem;
+}
+
+.perspective-tag.gold {
+  color: var(--color-antique-gold);
+}
+
+.perspective-desc {
+  font-size: 0.74rem;
+  color: var(--color-parchment-soft);
+  line-height: 1.35;
+}
+
+.voice-progress-track {
+  width: 100%;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 0.2rem;
+}
+
+.voice-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-sandstone) 0%, var(--color-antique-gold) 100%);
+  transition: width 350ms ease;
+}
+
+.chamber-two-action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(197, 161, 90, 0.25);
+  padding-top: 0.65rem;
+  margin-top: 0.2rem;
+}
+
+/* ==========================================================================
+   CHAMBER 3: OPEN THE BOOK (MANUSCRIPT FOLIO)
+   ========================================================================== */
+.manuscript-folio-card {
+  background: linear-gradient(170deg, rgba(24, 70, 59, 0.85) 0%, rgba(15, 42, 36, 0.95) 100%);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 8px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.8),
+              0 0 25px var(--color-antique-gold-subtle);
+  overflow: hidden;
+}
+
+.folio-tab-bar {
+  display: flex;
+  background: rgba(11, 33, 29, 0.95);
+  border-bottom: 1px solid rgba(197, 161, 90, 0.3);
+}
+
+.folio-tab-btn {
+  flex: 1;
+  padding: 0.85rem 1rem;
+  background: transparent;
+  border: none;
+  border-right: 1px solid rgba(197, 161, 90, 0.2);
+  color: var(--color-parchment-soft);
+  font-family: var(--font-accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 200ms ease;
+}
+
+.folio-tab-btn:hover {
+  background: rgba(18, 60, 50, 0.6);
+  color: var(--color-ivory);
+}
+
+.folio-tab-btn.active {
+  background: var(--color-emerald-deep);
+  color: var(--color-antique-gold-bright);
+  border-bottom: 2px solid var(--color-antique-gold);
+  font-weight: 700;
+}
+
+.folio-body-area {
+  padding: 2rem;
+  min-height: 220px;
+}
+
+.folio-quote {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-style: italic;
+  color: var(--color-parchment);
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  border-left: 3px solid var(--color-antique-gold);
+  padding-left: 1.25rem;
+}
+
+.quote-byline {
+  display: block;
+  font-family: var(--font-accent);
+  font-size: 0.85rem;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  color: var(--color-antique-gold);
+  margin-top: 0.5rem;
+}
+
+.folio-paragraph {
+  font-size: 0.98rem;
+  color: var(--color-ivory-muted);
+  line-height: 1.7;
+}
+
+.folio-stat-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px dashed rgba(197, 161, 90, 0.25);
+}
+
+.folio-stat-pill {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(197, 161, 90, 0.3);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--color-antique-gold);
+  letter-spacing: 0.12em;
+}
+
+.stat-val {
+  font-size: 0.88rem;
+  color: var(--color-ivory);
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   CHAMBER 4: INTERACTIVE CHARACTER ATLAS (HOVER POPOVER SYSTEM)
+   ========================================================================== */
+.atlas-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+.atlas-filter-btn {
+  background: rgba(18, 60, 50, 0.6);
+  border: 1px solid rgba(197, 161, 90, 0.3);
+  color: var(--color-parchment-soft);
+  padding: 0.45rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-family: var(--font-accent);
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.atlas-filter-btn:hover {
+  border-color: var(--color-antique-gold);
+  color: var(--color-ivory);
+}
+
+.atlas-filter-btn.active {
+  background: var(--color-antique-gold);
+  color: var(--color-midnight-forest);
+  font-weight: 700;
+  border-color: var(--color-antique-gold-bright);
+}
+
+.atlas-stage-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .atlas-stage-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.character-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.85rem;
+  position: relative;
+}
+
+.character-token-card {
+  background: linear-gradient(160deg, rgba(24, 70, 59, 0.75) 0%, rgba(15, 42, 36, 0.95) 100%);
+  border: 1px solid rgba(197, 161, 90, 0.35);
+  border-radius: 6px;
+  padding: 0.9rem;
+  cursor: pointer;
+  position: relative;
+  transition: transform 220ms var(--ease-cinematic),
+              border-color 220ms ease,
+              box-shadow 220ms ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.character-token-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-antique-gold-bright);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.7),
+              0 0 20px var(--color-antique-gold-glow);
+  z-index: 40;
+}
+
+.character-token-card.selected {
+  border-color: var(--color-antique-gold);
+  background: linear-gradient(160deg, rgba(35, 95, 80, 0.85) 0%, rgba(15, 42, 36, 0.98) 100%);
+  box-shadow: 0 0 16px var(--color-antique-gold-glow);
+}
+
+.char-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.char-symbol {
+  font-size: 1.4rem;
+}
+
+.char-alliance-tag {
+  font-size: 0.65rem;
+  font-family: var(--font-accent);
+  letter-spacing: 0.1em;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 0.15rem 0.4rem;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.char-card-name-group .char-name {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-ivory);
+  line-height: 1.25;
+}
+
+.char-sanskrit {
+  font-size: 0.75rem;
+  color: var(--color-antique-gold);
+  font-style: italic;
+}
+
+.char-role {
+  font-size: 0.72rem;
+  color: var(--color-sandstone-light);
+  line-height: 1.35;
+  margin-top: 0.25rem;
+}
+
+/* REQUESTED INTERACTIVE FEATURE: Hover Popover */
+.char-hover-popover {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  background: rgba(11, 33, 29, 0.98);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 6px;
+  padding: 0.85rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.9),
+              0 0 20px var(--color-antique-gold-glow);
+  pointer-events: none;
+  z-index: 50;
+  animation: popoverFade 180ms ease-out;
+}
+
+.popover-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(197, 161, 90, 0.3);
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.popover-name {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-antique-gold-bright);
+}
+
+.popover-symbol {
+  font-size: 1.1rem;
+}
+
+.popover-info {
+  font-size: 0.8rem;
+  color: var(--color-parchment);
+  line-height: 1.45;
+}
+
+.popover-hint {
+  font-size: 0.68rem;
+  color: var(--color-sandstone-light);
+  letter-spacing: 0.05em;
+  margin-top: 0.45rem;
+  text-transform: uppercase;
+}
+
+@keyframes popoverFade {
+  from { opacity: 0; transform: translate(-50%, 6px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+/* Side Spotlight Drawer in Atlas */
+.atlas-detail-panel {
+  background: linear-gradient(170deg, rgba(20, 60, 50, 0.9) 0%, rgba(11, 33, 29, 0.98) 100%);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.detail-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(197, 161, 90, 0.25);
+  padding-bottom: 1rem;
+}
+
+.detail-panel-name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-antique-gold);
+}
+
+.detail-panel-epithet {
+  font-family: var(--font-accent);
+  font-size: 0.8rem;
+  color: var(--color-sandstone-light);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.detail-body-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detail-section-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-family: var(--font-accent);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold);
+  margin-bottom: 0.25rem;
+}
+
+.detail-text {
+  font-size: 0.9rem;
+  color: var(--color-ivory-muted);
+  line-height: 1.55;
+}
+
+/* ==========================================================================
+   CHAMBER 5: MEET KRISHNAA (MASTER PORTRAIT & FACETS)
+   ========================================================================== */
+.krishnaa-stage-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .krishnaa-stage-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.krishnaa-portrait-card {
+  position: relative;
+  border: 2px solid var(--color-antique-gold);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.9),
+              0 0 25px var(--color-antique-gold-glow);
+}
+
+.krishnaa-portrait-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  cursor: pointer;
+}
+
+.portrait-caption-tag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(11, 33, 29, 0.92);
+  border-top: 1px solid var(--color-antique-gold);
+  padding: 0.4rem;
+  text-align: center;
+  font-family: var(--font-accent);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  color: var(--color-antique-gold);
+}
+
+.krishnaa-facets-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.facet-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.facet-pill-btn {
+  background: rgba(18, 60, 50, 0.7);
+  border: 1px solid rgba(197, 161, 90, 0.3);
+  color: var(--color-parchment-soft);
+  padding: 0.5rem 0.9rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: all 200ms ease;
+}
+
+.facet-pill-btn:hover {
+  border-color: var(--color-antique-gold);
+  color: var(--color-ivory);
+}
+
+.facet-pill-btn.active {
+  background: var(--color-antique-gold);
+  color: var(--color-midnight-forest);
+  border-color: var(--color-antique-gold-bright);
+  font-weight: 700;
+}
+
+.facet-card-body {
+  background: linear-gradient(170deg, rgba(24, 70, 59, 0.85) 0%, rgba(15, 42, 36, 0.98) 100%);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+.facet-quote {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--color-parchment);
+  line-height: 1.45;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--color-antique-gold);
+  padding-left: 1rem;
+}
+
+.facet-body-text {
+  font-size: 0.95rem;
+  color: var(--color-ivory-muted);
+  line-height: 1.65;
+}
+
+.krishnaa-action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* ==========================================================================
+   CHAMBER 6: MAYA SABHA (ILLUSION HOTSPOTS)
+   ========================================================================== */
+.hotspot-nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.hotspot-selector-btn {
+  background: rgba(18, 60, 50, 0.7);
+  border: 1px solid rgba(197, 161, 90, 0.35);
+  color: var(--color-parchment-soft);
+  padding: 0.65rem 1.25rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 200ms ease;
+}
+
+.hotspot-selector-btn:hover {
+  border-color: var(--color-antique-gold);
+  color: var(--color-ivory);
+}
+
+.hotspot-selector-btn.active {
+  background: var(--color-antique-gold);
+  color: var(--color-midnight-forest);
+  font-weight: 700;
+  border-color: var(--color-antique-gold-bright);
+}
+
+.maya-sabha-card {
+  background: linear-gradient(170deg, rgba(20, 60, 50, 0.85) 0%, rgba(11, 33, 29, 0.98) 100%);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.85);
+}
+
+.maya-card-header .maya-kicker {
+  font-family: var(--font-accent);
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold);
+}
+
+.maya-card-title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--color-ivory);
+  margin-bottom: 1rem;
+}
+
+.maya-card-quote {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--color-parchment);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--color-antique-gold);
+  padding-left: 1rem;
+}
+
+.maya-card-body {
+  font-size: 0.95rem;
+  color: var(--color-ivory-muted);
+  line-height: 1.65;
+}
+
+/* ==========================================================================
+   CHAMBER 7: THE DICE HALL (BURGUNDY & SHADOWS)
+   ========================================================================== */
+.dice-hall-stage-card {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 850px) {
+  .dice-hall-stage-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dice-hall-event-block {
+  background: linear-gradient(160deg, rgba(89, 43, 53, 0.6) 0%, rgba(58, 24, 31, 0.85) 100%);
+  border: 1px solid rgba(226, 164, 174, 0.4);
+  border-radius: 8px;
+  padding: 1.75rem;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.8);
+}
+
+.dice-hall-event-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #E2A4AE;
+  margin-bottom: 0.75rem;
+}
+
+.dice-hall-quote {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--color-ivory);
+  line-height: 1.45;
+  margin-bottom: 1rem;
+  border-left: 3px solid #E2A4AE;
+  padding-left: 0.9rem;
+}
+
+.dice-hall-summary {
+  font-size: 0.92rem;
+  color: var(--color-parchment-soft);
+  line-height: 1.6;
+}
+
+.dice-hall-questions-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.dice-question-item {
+  background: rgba(18, 60, 50, 0.65);
+  border: 1px solid rgba(197, 161, 90, 0.35);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.dice-question-header-btn {
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  border: none;
+  color: var(--color-ivory);
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  text-align: left;
+}
+
+.dice-question-header-btn:hover {
+  background: rgba(18, 60, 50, 0.9);
+}
+
+.dice-question-body {
+  padding: 0 1rem 1rem 1rem;
+  font-size: 0.88rem;
+  color: var(--color-parchment-soft);
+  line-height: 1.55;
+}
+
+/* ==========================================================================
+   CHAMBER 8: KARNA DILEMMA (INTERACTIVE MORAL BALANCE SLIDER)
+   ========================================================================== */
+.karna-slider-container {
+  background: rgba(11, 33, 29, 0.8);
+  border: 1px solid rgba(197, 161, 90, 0.35);
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.slider-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.88rem;
+}
+
+.scale-center-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-accent);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold);
+}
+
+.karna-range-input {
+  width: 100%;
+  accent-color: var(--color-antique-gold);
+  cursor: pointer;
+}
+
+.karna-dual-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .karna-dual-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.karna-perspective-panel {
+  background: linear-gradient(160deg, rgba(24, 70, 59, 0.75) 0%, rgba(11, 33, 29, 0.95) 100%);
+  border: 1px solid rgba(197, 161, 90, 0.35);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 250ms ease;
+  cursor: pointer;
+}
+
+.karna-perspective-panel.highlighted {
+  border-color: var(--color-antique-gold-bright);
+  box-shadow: 0 0 25px var(--color-antique-gold-glow);
+  transform: translateY(-2px);
+}
+
+.karna-perspective-panel.accountability {
+  background: linear-gradient(160deg, rgba(89, 43, 53, 0.5) 0%, rgba(11, 33, 29, 0.95) 100%);
+}
+
+.panel-badge {
+  font-family: var(--font-accent);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+
+.panel-badge.gold {
+  background: rgba(197, 161, 90, 0.2);
+  color: var(--color-antique-gold);
+  border: 1px solid var(--color-antique-gold);
+}
+
+.panel-badge.burgundy {
+  background: rgba(226, 164, 174, 0.2);
+  color: #E2A4AE;
+  border: 1px solid #E2A4AE;
+}
+
+.panel-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--color-ivory);
+  margin-bottom: 0.85rem;
+}
+
+.karna-point-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.karna-point-list li {
+  font-size: 0.85rem;
+  color: var(--color-parchment-soft);
+  line-height: 1.45;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.karna-point-list li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  color: var(--color-antique-gold);
+  font-size: 0.75rem;
+}
+
+/* ==========================================================================
+   CHAMBER 9: COST OF WAR (EMPTY THRONES & GRIEF)
+   ========================================================================== */
+.cost-tab-bar {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+.cost-tab-btn {
+  background: rgba(18, 60, 50, 0.65);
+  border: 1px solid rgba(197, 161, 90, 0.35);
+  color: var(--color-parchment-soft);
+  padding: 0.55rem 1.15rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: all 200ms ease;
+}
+
+.cost-tab-btn.active {
+  background: var(--color-antique-gold);
+  color: var(--color-midnight-forest);
+  font-weight: 700;
+  border-color: var(--color-antique-gold-bright);
+}
+
+.cost-display-card {
+  background: linear-gradient(170deg, rgba(20, 50, 42, 0.85) 0%, rgba(11, 33, 29, 0.98) 100%);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.85);
+}
+
+.cost-quote {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-style: italic;
+  color: var(--color-parchment);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--color-antique-gold);
+  padding-left: 1rem;
+}
+
+.cost-body {
+  font-size: 0.95rem;
+  color: var(--color-ivory-muted);
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   CHAMBER 10: WHY RETELL (DUAL TABLETS)
+   ========================================================================== */
+.why-retell-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .why-retell-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.retell-tablet {
+  background: linear-gradient(160deg, rgba(24, 70, 59, 0.8) 0%, rgba(11, 33, 29, 0.98) 100%);
+  border: 1px solid rgba(197, 161, 90, 0.35);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.retell-tablet.modern {
+  border-color: var(--color-antique-gold);
+}
+
+.retell-tablet-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid rgba(197, 161, 90, 0.25);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.retell-tablet-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--color-ivory);
+}
+
+.retell-points-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.retell-points-list li {
+  font-size: 0.88rem;
+  color: var(--color-parchment-soft);
+  line-height: 1.5;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.retell-points-list li::before {
+  content: '❖';
+  position: absolute;
+  left: 0;
+  color: var(--color-antique-gold);
+  font-size: 0.75rem;
+}
+
+.retell-synthesis-card {
+  background: rgba(18, 60, 50, 0.75);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+}
+
+/* ==========================================================================
+   CHAMBER 11: LITERARY CRITIQUE SALON (NO RESORT/HOTEL REVIEWS)
+   ========================================================================== */
+.literary-press-selector-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: center;
+}
+
+.literary-press-tab {
+  background: rgba(18, 60, 50, 0.75);
+  border: 1px solid rgba(197, 161, 90, 0.35);
+  color: var(--color-parchment-soft);
+  padding: 0.55rem 1.2rem;
+  border-radius: 4px;
+  font-family: var(--font-accent);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: all 200ms ease;
+}
+
+.literary-press-tab:hover {
+  border-color: var(--color-antique-gold);
+  color: var(--color-ivory);
+}
+
+.literary-press-tab.active {
+  background: var(--color-antique-gold);
+  color: var(--color-midnight-forest);
+  font-weight: 700;
+  border-color: var(--color-antique-gold-bright);
+}
+
+.literary-critique-scroll {
+  background: linear-gradient(170deg, rgba(24, 70, 59, 0.9) 0%, rgba(11, 33, 29, 0.98) 100%);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 8px;
+  padding: 1.75rem 2rem;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.9),
+              0 0 25px var(--color-antique-gold-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  position: relative;
+}
+
+.critique-scroll-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(197, 161, 90, 0.25);
+  padding-bottom: 0.65rem;
+}
+
+.critique-masthead {
+  font-family: var(--font-accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold);
+  margin-bottom: 0.2rem;
+}
+
+.critique-publication-title {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  color: var(--color-ivory);
+  letter-spacing: 0.03em;
+}
+
+.critique-verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  color: #4ADE80;
+  background: rgba(74, 222, 128, 0.12);
+  border: 1px solid rgba(74, 222, 128, 0.3);
+  padding: 0.25rem 0.6rem;
+  border-radius: 14px;
+}
+
+.critique-quote-body {
+  position: relative;
+  padding-left: 2.75rem;
+}
+
+.critique-giant-quote-mark {
+  position: absolute;
+  left: 0;
+  top: -4px;
+  color: var(--color-antique-gold);
+  opacity: 0.45;
+}
+
+.critique-headline-quote {
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 2.1vw, 1.8rem);
+  font-style: italic;
+  color: var(--color-parchment);
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.critique-extended-text {
+  font-size: 0.95rem;
+  color: var(--color-ivory-muted);
+  line-height: 1.65;
+}
+
+.critique-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-top: 1px solid rgba(197, 161, 90, 0.2);
+  padding-top: 0.85rem;
+}
+
+.critique-analysis-box {
+  flex: 1;
+}
+
+.critique-analysis-label {
+  font-family: var(--font-accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.critique-analysis-text {
+  font-size: 0.85rem;
+  color: var(--color-parchment-soft);
+  line-height: 1.5;
+}
+
+.critique-archive-link {
+  font-size: 0.78rem;
+  color: var(--color-antique-gold);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid rgba(197, 161, 90, 0.4);
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  transition: all 200ms ease;
+  flex-shrink: 0;
+}
+
+.critique-archive-link:hover {
+  background: var(--color-antique-gold);
+  color: var(--color-midnight-forest);
+}
+
+.mini-quotes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .mini-quotes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mini-quote-item {
+  background: rgba(18, 60, 50, 0.65);
+  border: 1px solid rgba(197, 161, 90, 0.25);
+  border-radius: 6px;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.mini-quote-item:hover {
+  border-color: var(--color-antique-gold);
+  background: rgba(24, 70, 59, 0.85);
+}
+
+.mini-quote-item.active {
+  border-color: var(--color-antique-gold-bright);
+  background: rgba(35, 95, 80, 0.85);
+  box-shadow: 0 0 12px var(--color-antique-gold-glow);
+}
+
+.mini-quote-pub {
+  font-family: var(--font-accent);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--color-antique-gold);
+  margin-bottom: 0.25rem;
+}
+
+.mini-quote-snippet {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--color-ivory-muted);
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   CHAMBER 12: FINALE & AUDIENCE QUESTIONS
+   ========================================================================== */
+.finale-questions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.finale-question-card {
+  background: linear-gradient(160deg, rgba(20, 60, 50, 0.75) 0%, rgba(11, 33, 29, 0.95) 100%);
+  border: 1px solid rgba(197, 161, 90, 0.35);
+  border-radius: 6px;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.finale-question-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-antique-gold);
+}
+
+.finale-question-card.active {
+  border-color: var(--color-antique-gold-bright);
+  box-shadow: 0 0 20px var(--color-antique-gold-glow);
+}
+
+.q-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.q-number {
+  font-family: var(--font-accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold);
+}
+
+.q-done-pill {
+  font-size: 0.68rem;
+  color: #4ADE80;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.q-card-heading {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--color-ivory);
+  margin-bottom: 0.4rem;
+}
+
+.q-card-body {
+  font-size: 0.82rem;
+  color: var(--color-parchment-soft);
+  line-height: 1.4;
+}
+
+.finale-focus-panel {
+  background: linear-gradient(170deg, rgba(24, 70, 59, 0.9) 0%, rgba(15, 42, 36, 0.98) 100%);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.85);
+}
+
+.focus-panel-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(197, 161, 90, 0.25);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.focus-panel-title {
+  font-family: var(--font-accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold);
+}
+
+.focus-main-question {
+  font-family: var(--font-heading);
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: var(--color-ivory);
+  line-height: 1.35;
+  margin-bottom: 1rem;
+}
+
+.focus-probe-box {
+  background: rgba(0, 0, 0, 0.4);
+  border-left: 3px solid var(--color-antique-gold);
+  padding: 0.75rem 1rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.probe-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-family: var(--font-accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold);
+  margin-bottom: 0.25rem;
+}
+
+.probe-text {
+  font-size: 0.88rem;
+  color: var(--color-parchment);
+  line-height: 1.5;
+}
+
+.finale-closing-dock {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.closing-quote-banner {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--color-antique-gold);
+  letter-spacing: 0.02em;
+}
+
+/* ==========================================================================
+   PALACE CHAMBER MAP DRAWER
+   ========================================================================== */
+.chamber-map-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 33, 29, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  animation: modalFadeIn 250ms ease;
+}
+
+.chamber-map-drawer {
+  background: linear-gradient(170deg, #18463B 0%, #0F2A24 100%);
+  border: 2px solid var(--color-antique-gold);
+  border-radius: 8px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.95),
+              0 0 35px var(--color-antique-gold-glow);
+  width: min(1040px, 94vw);
+  max-height: 88vh;
+  overflow-y: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.map-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(197, 161, 90, 0.25);
+  padding-bottom: 0.75rem;
+}
+
+.map-drawer-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--color-antique-gold);
+}
+
+.map-drawer-desc {
+  font-size: 0.85rem;
+  color: var(--color-parchment-soft);
+}
+
+.map-drawer-desc kbd {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(197, 161, 90, 0.4);
+  border-radius: 3px;
+  padding: 0.1rem 0.35rem;
+  color: var(--color-antique-gold);
+  font-family: monospace;
+}
+
+.chambers-grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.85rem;
+}
+
+.chamber-nav-card {
+  background: linear-gradient(160deg, rgba(20, 60, 50, 0.75) 0%, rgba(11, 33, 29, 0.95) 100%);
+  border: 1px solid rgba(197, 161, 90, 0.3);
+  border-radius: 6px;
+  padding: 0.9rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 200ms ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.chamber-nav-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-antique-gold);
+  background: rgba(24, 70, 59, 0.9);
+}
+
+.chamber-nav-card.active {
+  border-color: var(--color-antique-gold-bright);
+  background: linear-gradient(160deg, rgba(35, 95, 80, 0.9) 0%, rgba(15, 42, 36, 0.98) 100%);
+  box-shadow: 0 0 16px var(--color-antique-gold-glow);
+}
+
+.chamber-card-num-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chamber-badge-num {
+  font-family: var(--font-accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold);
+}
+
+.chamber-time-pill {
+  font-size: 0.68rem;
+  color: var(--color-sandstone-light);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+}
+
+.chamber-card-name {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-ivory);
+  line-height: 1.25;
+}
+
+.chamber-card-speaker {
+  font-size: 0.7rem;
+  color: var(--color-parchment-soft);
+}
+
+/* ==========================================================================
+   REDUCED MOTION MODE IMPLEMENTATION
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .door-leaf,
+  .hero-container,
+  .hero-background-layer {
+    transform: none !important;
+    transition: opacity 200ms ease !important;
+  }
+
+  .diya-flame {
+    animation: none !important;
+    opacity: 0.95 !important;
+  }
+}
+
+.reduced-motion *,
+.reduced-motion *::before,
+.reduced-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+
+.reduced-motion .door-leaf,
+.reduced-motion .hero-container,
+.reduced-motion .hero-background-layer {
+  transform: none !important;
+  transition: opacity 200ms ease !important;
+}
+
+.reduced-motion .diya-flame {
+  animation: none !important;
+  opacity: 0.95 !important;
+}
+
+/* ==========================================================================
+   COMPLETE VISUAL TRANSFORMATION — ENHANCED IMAGE LAYOUTS & STYLES
+   ========================================================================== */
+
+/* ==========================================================================
+   COMPLETE VISUAL TRANSFORMATION — UNCROPPED HD IMAGE LAYOUTS & STYLES
+   ========================================================================== */
+
+/* Chamber 2 Visual Enhancements */
+.primer-visual-banner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(18, 60, 50, 0.75);
+  border: 1.5px solid rgba(197, 161, 90, 0.55);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.85rem;
+  cursor: pointer;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.primer-visual-banner:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-antique-gold-bright);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7), 0 0 16px var(--color-antique-gold-glow);
+}
+
+.primer-draupadi-thumb {
+  width: 68px;
+  height: 80px;
+  border-radius: 6px;
+  object-fit: contain;
+  background: #061210;
+  border: 1.5px solid var(--color-antique-gold);
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+}
+
+.primer-draupadi-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.primer-draupadi-name {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-ivory);
+  margin: 0.2rem 0;
+}
+
+.primer-draupadi-note {
+  font-size: 0.75rem;
+  color: var(--color-sandstone-light);
+  line-height: 1.35;
+}
+
+.voice-card-thumb-img {
+  width: 54px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: contain;
+  background: #061210;
+  border: 1.5px solid var(--color-antique-gold);
+  flex-shrink: 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Chamber 3 Visual Editorial Grid */
+.manuscript-editorial-grid {
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .manuscript-editorial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.book-visual-artifacts-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.author-artifact-card,
+.manuscript-artifact-card {
+  background: rgba(11, 33, 29, 0.92);
+  border: 1.5px solid rgba(197, 161, 90, 0.45);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+.artifact-image-frame {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  background: radial-gradient(circle at center, rgba(18, 60, 50, 0.45) 0%, #061210 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(197, 161, 90, 0.35);
+}
+
+.author-photo-img,
+.manuscript-leaf-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 260ms ease;
+}
+
+.author-artifact-card:hover .author-photo-img,
+.manuscript-artifact-card:hover .manuscript-leaf-img {
+  transform: scale(1.03);
+}
+
+.artifact-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(11, 33, 29, 0.9);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.68rem;
+  font-family: var(--font-accent);
+  letter-spacing: 0.08em;
+  color: var(--color-antique-gold);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.8);
+}
+
+.artifact-caption {
+  padding: 0.6rem 0.85rem 0.75rem;
+}
+
+.artifact-title {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-ivory);
+  margin-bottom: 0.2rem;
+}
+
+.artifact-sub {
+  font-size: 0.72rem;
+  color: var(--color-sandstone-light);
+  line-height: 1.35;
+}
+
+/* Chamber 4 Character Gallery Illustrated Portraits — UNCROPPED HD */
+.char-card-portrait-frame {
+  position: relative;
+  width: 100%;
+  height: 145px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1.5px solid rgba(197, 161, 90, 0.35);
+  background: radial-gradient(circle at center, rgba(18, 60, 50, 0.55) 0%, #061210 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.char-card-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 260ms ease;
+}
+
+.character-token-card:hover .char-card-portrait-img {
+  transform: scale(1.05);
+}
+
+.char-symbol-overlay {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background: rgba(6, 18, 16, 0.85);
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  border: 1px solid rgba(197, 161, 90, 0.5);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.8);
+}
+
+.char-alliance-tag-overlay {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  font-size: 0.58rem;
+  font-family: var(--font-accent);
+  letter-spacing: 0.08em;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 0.12rem 0.4rem;
+  background: rgba(6, 18, 16, 0.85);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.8);
+}
+
+.detail-hero-banner {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  background: radial-gradient(circle at center, rgba(18, 60, 50, 0.6) 0%, #061210 100%);
+  border-bottom: 1.5px solid var(--color-antique-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-hero-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.detail-hero-content {
+  position: absolute;
+  bottom: 10px;
+  left: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(6, 18, 16, 0.85);
+  border: 1px solid rgba(197, 161, 90, 0.4);
+  border-radius: 6px;
+  padding: 0.45rem 0.75rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.8);
+}
+
+.detail-hero-symbol {
+  font-size: 1.6rem;
+}
+
+.detail-panel-subbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.45rem 1rem;
+  background: rgba(18, 60, 50, 0.7);
+  border-bottom: 1px solid rgba(197, 161, 90, 0.25);
+}
+
+.char-alliance-pill {
+  font-size: 0.65rem;
+  font-family: var(--font-accent);
+  letter-spacing: 0.1em;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 0.15rem 0.45rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Chamber 5 Meet Krishnaa Visual Stage — UNCROPPED HD */
+.krishnaa-visual-stage-grid {
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .krishnaa-visual-stage-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.portrait-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid var(--color-antique-gold);
+  background: radial-gradient(circle at center, rgba(18, 60, 50, 0.5) 0%, #061210 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 20px var(--color-antique-gold-glow);
+}
+
+.krishnaa-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  cursor: pointer;
+}
+
+.portrait-expand-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(11, 33, 29, 0.92);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 4px;
+  color: var(--color-antique-gold);
+  padding: 0.3rem 0.7rem;
+  font-size: 0.72rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: background 180ms ease, transform 180ms ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+}
+
+.portrait-expand-badge:hover {
+  background: var(--color-antique-gold);
+  color: #0B211D;
+  transform: translateY(-1px);
+}
+
+.portrait-meta-desc {
+  font-size: 0.74rem;
+  color: var(--color-sandstone-light);
+  font-style: italic;
+  line-height: 1.35;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.facet-card-body-split {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1.15rem;
+  align-items: stretch;
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .facet-card-body-split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.facet-supporting-visual-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.supporting-visual-frame {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1.5px solid rgba(197, 161, 90, 0.5);
+  background: radial-gradient(circle at center, rgba(18, 60, 50, 0.4) 0%, #061210 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.supporting-visual-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.supporting-visual-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(11, 33, 29, 0.9);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 3px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.68rem;
+  color: var(--color-antique-gold-bright);
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.supporting-visual-caption {
+  font-size: 0.72rem;
+  color: var(--color-parchment-soft);
+  font-style: italic;
+  line-height: 1.35;
+}
+
+/* Chamber 6 Maya Sabha Panoramic Layout — UNCROPPED HD */
+.maya-stage-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.maya-panorama-hero {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid var(--color-antique-gold);
+  background: radial-gradient(circle at center, rgba(18, 60, 50, 0.4) 0%, #061210 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.85);
+}
+
+.maya-panorama-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.maya-panorama-badge-row {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
+.maya-pano-tag {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  background: rgba(11, 33, 29, 0.92);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 4px;
+  padding: 0.25rem 0.65rem;
+  color: var(--color-antique-gold);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.maya-characters-strip {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.maya-char-mini-card {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: rgba(11, 33, 29, 0.94);
+  border: 1.5px solid rgba(197, 161, 90, 0.45);
+  border-radius: 6px;
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+  transition: border-color 180ms ease, transform 180ms ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+}
+
+.maya-char-mini-card:hover,
+.maya-char-mini-card.active {
+  border-color: var(--color-antique-gold-bright);
+  box-shadow: 0 0 14px var(--color-antique-gold-glow);
+  transform: translateY(-2px);
+}
+
+.maya-mini-thumb {
+  width: 40px;
+  height: 48px;
+  border-radius: 4px;
+  object-fit: contain;
+  background: #061210;
+  border: 1.5px solid var(--color-antique-gold);
+}
+
+.maya-mini-title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-ivory);
+}
+
+.maya-mini-sub {
+  font-size: 0.68rem;
+  color: var(--color-sandstone-light);
+}
+
+.maya-character-portrait-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(18, 60, 50, 0.8);
+  border: 1.5px solid rgba(197, 161, 90, 0.45);
+  border-radius: 6px;
+  padding: 0.45rem 0.85rem;
+  flex-shrink: 0;
+}
+
+.badge-thumb-img {
+  width: 50px;
+  height: 60px;
+  border-radius: 4px;
+  object-fit: contain;
+  background: #061210;
+  border: 1.5px solid var(--color-antique-gold);
+}
+
+.badge-thumb-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-thumb-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-antique-gold);
+}
+
+.badge-thumb-role {
+  font-size: 0.68rem;
+  color: var(--color-sandstone-light);
+}
+
+/* Chamber 7 Dice Hall Master Assembly — UNCROPPED HD */
+.dice-hall-split-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .dice-hall-split-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dice-hall-visual-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.dice-scene-frame {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid rgba(226, 164, 174, 0.65);
+  background: radial-gradient(circle at center, rgba(89, 43, 53, 0.45) 0%, #061210 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(89, 43, 53, 0.5);
+}
+
+.dice-scene-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.dice-scene-caption-bar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+}
+
+.scene-citation {
+  font-size: 0.68rem;
+  font-family: var(--font-accent);
+  letter-spacing: 0.08em;
+  color: #E2A4AE;
+  background: rgba(11, 33, 29, 0.9);
+  border: 1px solid rgba(226, 164, 174, 0.4);
+  border-radius: 4px;
+  padding: 0.2rem 0.55rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.8);
+}
+
+.dice-participants-strip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.55rem;
+}
+
+.participant-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(11, 33, 29, 0.9);
+  border: 1px solid rgba(197, 161, 90, 0.35);
+  border-radius: 6px;
+  padding: 0.4rem 0.65rem;
+}
+
+.participant-thumb {
+  width: 44px;
+  height: 52px;
+  border-radius: 4px;
+  object-fit: contain;
+  background: #061210;
+  border: 1.5px solid var(--color-antique-gold);
+  flex-shrink: 0;
+}
+
+.participant-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.participant-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-ivory);
+}
+
+.participant-role {
+  font-size: 0.65rem;
+  color: var(--color-sandstone-light);
+}
+
+/* Chamber 8 Karna Dual Visual Grid — UNCROPPED HD */
+.karna-dual-visual-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+@media (max-width: 800px) {
+  .karna-dual-visual-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.karna-portrait-header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(197, 161, 90, 0.25);
+}
+
+.karna-header-thumb {
+  width: 70px;
+  height: 85px;
+  border-radius: 6px;
+  object-fit: contain;
+  background: #061210;
+  border: 2px solid var(--color-antique-gold);
+  flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.7);
+}
+
+.karna-scene-vignette {
+  margin-top: 0.85rem;
+}
+
+.vignette-img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  background: #061210;
+  border: 1.5px solid rgba(197, 161, 90, 0.4);
+  border-radius: 6px;
+}
+
+.vignette-label {
+  font-size: 0.68rem;
+  color: var(--color-sandstone-light);
+  font-style: italic;
+  display: block;
+  margin-top: 0.35rem;
+}
+
+.quote-vignette-box {
+  background: rgba(89, 43, 53, 0.45);
+  border: 1.5px solid rgba(226, 164, 174, 0.45);
+  border-radius: 6px;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.78rem;
+  color: #F2E8D5;
+  font-style: italic;
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  line-height: 1.45;
+}
+
+/* Chamber 9 Cost of Victory Aftermath Visuals — UNCROPPED HD */
+.cost-visual-stage-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .cost-visual-stage-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cost-artwork-card {
+  background: rgba(11, 33, 29, 0.92);
+  border: 1.5px solid rgba(197, 161, 90, 0.45);
+  border-radius: 8px;
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.cost-artwork-frame {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1.5px solid rgba(197, 161, 90, 0.35);
+  background: radial-gradient(circle at center, rgba(18, 60, 50, 0.4) 0%, #061210 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cost-aftermath-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.cost-artwork-citation {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 0.68rem;
+  font-family: var(--font-accent);
+  letter-spacing: 0.08em;
+  color: var(--color-antique-gold);
+  background: rgba(11, 33, 29, 0.9);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cost-artwork-caption {
+  font-size: 0.72rem;
+  color: var(--color-sandstone-light);
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.cost-narrative-card {
+  background: rgba(18, 60, 50, 0.8);
+  border: 1.5px solid rgba(197, 161, 90, 0.45);
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cost-character-header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid rgba(197, 161, 90, 0.25);
+}
+
+.cost-char-thumb {
+  width: 60px;
+  height: 72px;
+  border-radius: 6px;
+  object-fit: contain;
+  background: #061210;
+  border: 2px solid var(--color-antique-gold);
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+.cost-char-kicker {
+  font-size: 0.65rem;
+  font-family: var(--font-accent);
+  letter-spacing: 0.12em;
+  color: var(--color-antique-gold);
+}
+
+.cost-char-title {
+  font-size: 1.05rem;
+  font-family: var(--font-heading);
+  color: var(--color-ivory);
+  font-weight: 600;
+}
+
+/* Chamber 10 Comparative Tablets Visuals — UNCROPPED HD */
+.retell-tablet-visual-banner {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  background: radial-gradient(circle at center, rgba(18, 60, 50, 0.45) 0%, #061210 100%);
+  border-bottom: 1.5px solid var(--color-antique-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tablet-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.tablet-header-overlay {
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(6, 18, 16, 0.88);
+  border: 1px solid rgba(197, 161, 90, 0.4);
+  border-radius: 6px;
+  padding: 0.35rem 0.65rem;
+}
+
+.tablet-corner-thumb {
+  width: 44px;
+  height: 52px;
+  border-radius: 4px;
+  object-fit: contain;
+  background: #061210;
+  border: 1.5px solid var(--color-antique-gold);
+  flex-shrink: 0;
+}
+
+.tablet-kicker-tag {
+  font-size: 0.65rem;
+  font-family: var(--font-accent);
+  letter-spacing: 0.1em;
+  color: var(--color-sandstone-light);
+}
+
+.tablet-kicker-tag.gold {
+  color: var(--color-antique-gold);
+}
+
+/* Chamber 11 Reading Salon Visuals — UNCROPPED HD */
+.reviews-salon-stage-grid {
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .reviews-salon-stage-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.salon-author-plaque {
+  background: rgba(11, 33, 29, 0.92);
+  border: 1.5px solid rgba(197, 161, 90, 0.45);
+  border-radius: 8px;
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.salon-portrait-frame {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1.5px solid var(--color-antique-gold);
+  background: radial-gradient(circle at center, rgba(18, 60, 50, 0.45) 0%, #061210 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.salon-author-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.salon-author-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 0.68rem;
+  color: var(--color-antique-gold);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(6, 18, 16, 0.88);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+}
+
+.salon-author-name {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-ivory);
+}
+
+.salon-author-bio {
+  font-size: 0.72rem;
+  color: var(--color-sandstone-light);
+  line-height: 1.35;
+}
+
+.salon-manuscript-thumb-card {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  background: rgba(18, 60, 50, 0.6);
+  border: 1px solid rgba(197, 161, 90, 0.35);
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+.salon-folio-thumb {
+  width: 60px;
+  height: 52px;
+  border-radius: 4px;
+  object-fit: contain;
+  background: #061210;
+  border: 1.5px solid var(--color-antique-gold);
+  flex-shrink: 0;
+}
+
+.salon-folio-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.salon-folio-kicker {
+  font-size: 0.62rem;
+  font-family: var(--font-accent);
+  letter-spacing: 0.1em;
+  color: var(--color-antique-gold);
+}
+
+.salon-folio-caption {
+  font-size: 0.7rem;
+  color: var(--color-parchment-soft);
+  line-height: 1.3;
+}
+
+.salon-critique-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Chamber 12 Finale Character Anchors — UNCROPPED HD */
+.finale-spotlight-content-row {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .finale-spotlight-content-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.finale-character-anchors {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.finale-char-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: rgba(11, 33, 29, 0.92);
+  border: 1.5px solid var(--color-antique-gold);
+  border-radius: 8px;
+  padding: 0.55rem 0.85rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
+}
+
+.finale-char-thumb {
+  width: 58px;
+  height: 70px;
+  border-radius: 4px;
+  object-fit: contain;
+  background: #061210;
+  border: 1.5px solid var(--color-antique-gold);
+  flex-shrink: 0;
+}
+
+.finale-char-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.finale-char-name {
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--color-ivory);
+}
+
+.finale-char-role {
+  font-size: 0.68rem;
+  color: var(--color-sandstone-light);
+}
+
+.focus-prompt-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+/* ==========================================================================
+   DRAUPADI MASTER IDENTITY MODAL STYLING — UNCROPPED FULL PORTRAIT
+   ========================================================================== */
+.identity-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 18, 16, 0.92);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: popoverFade 200ms ease-out;
+}
+
+.identity-modal-card {
+  position: relative;
+  width: min(1000px, 94vw);
+  max-height: 90vh;
+  background: linear-gradient(160deg, rgba(18, 60, 50, 0.98) 0%, rgba(11, 33, 29, 0.99) 100%);
+  border: 2px solid var(--color-antique-gold);
+  border-radius: 10px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.95), 0 0 35px var(--color-antique-gold-glow);
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  overflow-y: auto;
+  gap: 1.5rem;
+  padding: 1.75rem;
+}
+
+@media (max-width: 850px) {
+  .identity-modal-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+.identity-portrait-col {
+  width: 100%;
+  height: 100%;
+  min-height: 440px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid var(--color-antique-gold);
+  background: radial-gradient(circle at center, rgba(18, 60, 50, 0.55) 0%, #061210 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+}
+
+.identity-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(11, 33, 29, 0.9);
+  border: 1.5px solid var(--color-antique-gold);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-antique-gold);
+  cursor: pointer;
+  z-index: 10;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.modal-close-btn:hover {
+  background: var(--color-antique-gold);
+  color: #0B211D;
+  transform: scale(1.08);
+}
+
+.identity-info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.identity-heading-group h3 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--color-ivory);
+  margin-bottom: 0.15rem;
+}
+
+.identity-sanskrit {
+  font-size: 1.1rem;
+  color: var(--color-antique-gold);
+  font-style: italic;
+}
+
+.identity-epithet {
+  font-family: var(--font-accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  color: var(--color-sandstone-light);
+  text-transform: uppercase;
+}
+
+.identity-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: var(--color-antique-gold);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(197, 161, 90, 0.3);
+  padding-bottom: 0.35rem;
+}
+
+.identity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.identity-list li {
+  font-size: 0.82rem;
+  color: var(--color-ivory-muted);
+  line-height: 1.45;
+  position: relative;
+  padding-left: 1.1rem;
+}
+
+.identity-list li::before {
+  content: '❖';
+  position: absolute;
+  left: 0;
+  color: var(--color-antique-gold);
+  font-size: 0.75rem;
+}
+
