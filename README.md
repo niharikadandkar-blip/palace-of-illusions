@@ -1,32 +1,68 @@
-# React + TypeScript + Vite
+# 🏛️ The Palace of Illusions — An Immersive Literary Experience
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An interactive, cinematic web experience designed for a group presentation and deep literary analysis of ***The Palace of Illusions*** by Chitra Banerjee Divakaruni.
 
-Currently, two official plugins are available:
+Narrated from the intimate first-person perspective of **Panchaali / Draupadi (Krishnaa)**, this experience guides audiences through the epic Mahabharata through the eyes of the fiery queen who shaped its destiny.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🌟 Features & Highlights
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Monumental Architectural Gateway**: Carved sandstone royal entrance with interactive diya oil-lamp glow controls, atmospheric ambient sound, and realistic royal double-door entry animation.
+- **12 Interactive Story Chambers**:
+  1. *The Gateway of Fire & Destiny* — Monumental palace entrance & soundscapes.
+  2. *The Audience Chamber* — Interactive audience poll question before entering.
+  3. *The Sacred Tome* — Historical context, Chitra Banerjee Divakaruni's vision, and epic themes.
+  4. *The Character Atlas* — Interactive visual roster of heroes with detailed hover & click dossiers.
+  5. *Meet Krishnaa* — Draupadi's birth from sacrificial fire and her master portrait.
+  6. *The Hall of Wonders (Maya Sabha)* — Architecture of illusion, water-mirrors, and Duryodhana's fateful stumble.
+  7. *The Dice Hall (Dyuta Sabha)* — The fateful wager, disrobing trial, and Draupadi's unyielding defiance.
+  8. *The Karna Dilemma* — Forbidden longing, secret recognition, and moral complexity.
+  9. *The Battlefield of Kurukshetra* — Cost of war, blood-soaked sands, and true price of victory.
+  10. *Why Retell the Epic?* — Feminist reclamation, subversive sub-text, and modern resonance.
+  11. *Critical Acclaim & Reflections* — Curated literary reviews, student quotes, and discussion sparks.
+  12. *The Final Ascent* — Draupadi's ascent through the Himalayas and interactive discussion prompts.
+- **Uncompromised HD Imagery**: 19 curated high-resolution character portraits and chamber paintings presented with dark royal museum framing and zero cropping (`object-fit: contain`).
+- **Chamber Navigation HUD**: Quick chamber selector, keyboard navigation (Left/Right arrows), and audio control toggle.
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🚀 Instant Deployment to Vercel
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+This repository is already pre-configured for **Vercel** with optimized build settings and SPA routing rewrites in `vercel.json`.
+
+### Step 1: Push to GitHub
+If you haven't pushed this repository yet:
+```bash
+# 1. Create a new repository on https://github.com/new (e.g. "palace-of-illusions")
+# 2. Add your repository remote URL:
+git remote add origin https://github.com/<your-username>/<your-repo-name>.git
+
+# 3. Push the main branch:
+git push -u origin main
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### Step 2: Import into Vercel
+1. Visit [vercel.com/new](https://vercel.com/new).
+2. Select your `palace-of-illusions` repository from GitHub.
+3. Vercel will automatically detect `Vite` and use the pre-configured `vercel.json` settings:
+   - **Framework Preset**: Vite
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+4. Click **Deploy**. Your site will be live on a custom `.vercel.app` URL in under 60 seconds!
+
+---
+
+## 💻 Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Create production build
+npm run build
+```
+
