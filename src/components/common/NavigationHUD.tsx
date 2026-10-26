@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Maximize2, Minimize2, Eye, ChevronLeft, ChevronRight, Activity, Map, Clock } from 'lucide-react';
+import { Maximize2, Minimize2, Eye, ChevronLeft, ChevronRight, Activity, Map, Clock, ScrollText } from 'lucide-react';
 
 interface NavigationHUDProps {
   currentChamber: number;
@@ -13,6 +13,7 @@ interface NavigationHUDProps {
   onToggleReducedMotion: () => void;
   onOpenDraupadiModal: () => void;
   onOpenChamberMap: () => void;
+  onOpenSpeakerScript?: () => void;
 }
 
 export const NavigationHUD: React.FC<NavigationHUDProps> = ({
@@ -27,6 +28,7 @@ export const NavigationHUD: React.FC<NavigationHUDProps> = ({
   onToggleReducedMotion,
   onOpenDraupadiModal,
   onOpenChamberMap,
+  onOpenSpeakerScript,
 }) => {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
@@ -102,6 +104,22 @@ export const NavigationHUD: React.FC<NavigationHUDProps> = ({
           <Clock size={13} style={{ color: elapsedSeconds > 900 ? '#FF6B6B' : 'var(--color-antique-gold)' }} />
           <span>{formatTimer(elapsedSeconds)}</span>
         </button>
+
+        {/* Group Speaker Script Prompter */}
+        {onOpenSpeakerScript && (
+          <button
+            className="hud-button"
+            onClick={onOpenSpeakerScript}
+            title="Open 6-Speaker Discussion Script & Cue Prompter [Hotkey: S]"
+            style={{
+              borderColor: 'rgba(197, 161, 90, 0.65)',
+              background: 'rgba(197, 161, 90, 0.15)',
+            }}
+          >
+            <ScrollText size={14} style={{ color: 'var(--color-antique-gold-bright)' }} />
+            <span style={{ color: 'var(--color-antique-gold-bright)', fontWeight: 600 }}>Script [S]</span>
+          </button>
+        )}
 
         {/* Draupadi Identity Reference */}
         <button

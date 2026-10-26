@@ -5,7 +5,9 @@ export interface ChamberMeta {
   subtitle: string;
   theme: string;
   speakerRole: string;
+  presenter: string;
   estimatedMinutes: string;
+  totalSubSlides?: number;
 }
 
 export interface BeginnerPollOption {
@@ -19,7 +21,6 @@ export interface BeginnerPollOption {
   imagePath?: string;
 }
 
-// Backward compatibility alias
 export type PollOption = BeginnerPollOption;
 
 export interface CharacterIdentity {

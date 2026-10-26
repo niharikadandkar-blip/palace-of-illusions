@@ -5,31 +5,42 @@
    ========================================================================== */
 
 :root {
-  /* Core Indian Royal Palette */
-  --color-emerald-deep: #123C32;
-  --color-midnight-forest: #0B211D;
-  --color-antique-gold: #C5A15A;
-  --color-antique-gold-bright: #E2C27E;
-  --color-antique-gold-glow: rgba(197, 161, 90, 0.4);
-  --color-antique-gold-subtle: rgba(197, 161, 90, 0.15);
+  /* Warm Eye-Pleasing Golden Lights Palette */
+  --color-golden-night: #090807;
+  --color-warm-obsidian: #0F0C0A;
+  --color-palace-amber: #1A140E;
+  --color-royal-gold: #F5C542;
+  --color-royal-gold-bright: #FFE89E;
+  --color-royal-gold-warm: #E5A932;
+  --color-royal-gold-deep: #B87D18;
+  --color-gold-glow: rgba(245, 197, 66, 0.35);
+  --color-gold-glow-subtle: rgba(245, 197, 66, 0.12);
+  --color-gold-glow-bright: rgba(255, 232, 158, 0.5);
+
+  --color-emerald-deep: #12241F;
+  --color-midnight-forest: #0A0807;
+  --color-antique-gold: #F5C542;
+  --color-antique-gold-bright: #FFE89E;
+  --color-antique-gold-glow: rgba(245, 197, 66, 0.35);
+  --color-antique-gold-subtle: rgba(245, 197, 66, 0.12);
   
-  --color-sandstone: #B78B65;
-  --color-sandstone-dark: #7A573B;
-  --color-sandstone-light: #D4AF8B;
-  --color-sandstone-shadow: rgba(45, 29, 18, 0.85);
+  --color-sandstone: #D4A373;
+  --color-sandstone-dark: #8C5D38;
+  --color-sandstone-light: #F2D5B1;
+  --color-sandstone-shadow: rgba(30, 20, 12, 0.85);
 
-  --color-burgundy: #592B35;
-  --color-burgundy-dark: #3A181F;
-  --color-burgundy-glow: rgba(89, 43, 53, 0.45);
+  --color-burgundy: #6B2D38;
+  --color-burgundy-dark: #3E161D;
+  --color-burgundy-glow: rgba(107, 45, 56, 0.45);
 
-  --color-parchment: #F2E8D5;
-  --color-parchment-soft: #E8DBC3;
-  --color-parchment-deep: #D5C3A5;
-  --color-parchment-text: #2A2117;
+  --color-parchment: #FBF6EB;
+  --color-parchment-soft: #F0E4CE;
+  --color-parchment-deep: #DFCDB2;
+  --color-parchment-text: #241D15;
 
-  --color-ivory: #FFF9EE;
-  --color-ivory-muted: rgba(255, 249, 238, 0.78);
-  --color-ivory-dim: rgba(255, 249, 238, 0.45);
+  --color-ivory: #FFFDF8;
+  --color-ivory-muted: rgba(255, 253, 248, 0.85);
+  --color-ivory-dim: rgba(255, 253, 248, 0.55);
 
   /* Typography Hierarchy with Complete Local Fallbacks */
   --font-display: 'Cinzel Decorative', 'Georgia', 'Times New Roman', serif;
@@ -37,11 +48,11 @@
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --font-accent: 'Marcellus', 'Cinzel Decorative', 'Georgia', serif;
 
-  /* Atmospheric Shadows & Glows */
-  --shadow-palace-depth: inset 0 0 120px rgba(11, 33, 29, 0.95);
-  --shadow-stone-pillar: 0 16px 48px rgba(0, 0, 0, 0.7);
-  --shadow-lamp-amber: 0 0 35px rgba(226, 194, 126, 0.45);
-  --shadow-card-elevated: 0 12px 36px -4px rgba(0, 0, 0, 0.65);
+  /* Atmospheric Shadows & Golden Light Glows */
+  --shadow-palace-depth: inset 0 0 120px rgba(10, 8, 7, 0.95);
+  --shadow-stone-pillar: 0 16px 48px rgba(0, 0, 0, 0.8);
+  --shadow-lamp-amber: 0 0 45px rgba(245, 197, 66, 0.45);
+  --shadow-card-elevated: 0 16px 40px -4px rgba(0, 0, 0, 0.8), 0 0 30px rgba(245, 197, 66, 0.12);
 
   /* Cinematic Animation Curves */
   --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
@@ -59,7 +70,7 @@ html, body, #root {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: var(--color-midnight-forest);
+  background-color: var(--color-golden-night);
   color: var(--color-ivory);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
@@ -3499,3 +3510,531 @@ html, body, #root {
   font-size: 0.75rem;
 }
 
+/* ==========================================================================
+   MASTER PRESENTATION SUB-SLIDE DESIGN SYSTEM (CLASSROOM & PROJECTOR OPTIMIZED)
+   Complete, readable sentences | Zero overlap | High-contrast Royal Palette
+   ========================================================================== */
+
+/* Sub-Slide Pill Selector Navigation */
+.chamber-subslide-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background: rgba(11, 33, 29, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(197, 161, 90, 0.3);
+  border-radius: 9999px;
+  padding: 0.35rem 0.75rem;
+  margin: 0 auto 0.75rem auto;
+  max-width: 900px;
+  width: 100%;
+}
+
+.subslide-pills-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.subslide-pills-group::-webkit-scrollbar {
+  display: none;
+}
+
+.subslide-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: transparent;
+  color: var(--color-ivory-muted);
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  padding: 0.4rem 0.95rem;
+  font-family: var(--font-accent);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.25s var(--ease-cinematic);
+  white-space: nowrap;
+}
+
+.subslide-pill-btn:hover {
+  color: var(--color-ivory);
+  background: rgba(197, 161, 90, 0.12);
+  border-color: rgba(197, 161, 90, 0.3);
+}
+
+.subslide-pill-btn.active {
+  color: #123C32;
+  background: linear-gradient(135deg, #E2C27E 0%, #C5A15A 100%);
+  border-color: var(--color-antique-gold-bright);
+  font-weight: 600;
+  box-shadow: 0 0 16px rgba(226, 194, 126, 0.4);
+}
+
+.subslide-counter-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-accent);
+  font-size: 0.78rem;
+  color: var(--color-antique-gold-bright);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-left: 0.5rem;
+  border-left: 1px solid rgba(197, 161, 90, 0.25);
+  white-space: nowrap;
+}
+
+/* Master Presentation Card Grid */
+.presentation-slide-grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+  background: rgba(11, 33, 29, 0.65);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 161, 90, 0.32);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55), inset 0 0 40px rgba(18, 60, 50, 0.4);
+  max-height: calc(100vh - 240px);
+  overflow-y: auto;
+}
+
+@media (max-width: 1024px) {
+  .presentation-slide-grid {
+    grid-template-columns: 1fr;
+    max-height: calc(100vh - 200px);
+  }
+}
+
+/* Visual Anchor Column */
+.presentation-visual-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.presentation-visual-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(197, 161, 90, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  background-color: #061411;
+}
+
+.presentation-visual-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-cinematic);
+}
+
+.presentation-visual-frame:hover .presentation-visual-img {
+  transform: scale(1.03);
+}
+
+.presentation-visual-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.1) 60%);
+  pointer-events: none;
+}
+
+.presentation-visual-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.65rem;
+  background: rgba(11, 33, 29, 0.9);
+  border: 1px solid rgba(197, 161, 90, 0.4);
+  border-radius: 9999px;
+  font-family: var(--font-accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--color-antique-gold-bright);
+  text-transform: uppercase;
+}
+
+.presentation-visual-meta {
+  background: rgba(18, 60, 50, 0.5);
+  border: 1px solid rgba(197, 161, 90, 0.25);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+}
+
+.visual-meta-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-ivory);
+  margin-bottom: 0.25rem;
+}
+
+.visual-meta-desc {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--color-parchment-soft);
+}
+
+/* Content Presentation Column */
+.presentation-content-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.15rem;
+}
+
+.slide-main-header {
+  border-bottom: 1px solid rgba(197, 161, 90, 0.25);
+  padding-bottom: 0.75rem;
+}
+
+.slide-kicker-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-accent);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold);
+  margin-bottom: 0.35rem;
+}
+
+.slide-header-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.2vw, 1.95rem);
+  font-weight: 700;
+  color: var(--color-ivory);
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+}
+
+/* Structured Academic Paragraphs & Sections */
+.slide-body-narrative {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--color-ivory-muted);
+}
+
+.slide-body-narrative p {
+  margin: 0;
+}
+
+.slide-body-narrative strong {
+  color: var(--color-ivory);
+  font-weight: 600;
+}
+
+/* Bullet Point Presentation Items */
+.presentation-points-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.presentation-point-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: rgba(18, 60, 50, 0.4);
+  border: 1px solid rgba(197, 161, 90, 0.2);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.presentation-point-item:hover {
+  border-color: rgba(197, 161, 90, 0.45);
+  background: rgba(18, 60, 50, 0.6);
+}
+
+.point-symbol-gold {
+  color: var(--color-antique-gold);
+  font-size: 0.9rem;
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+}
+
+.point-text-block {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--color-parchment);
+}
+
+.point-text-block strong {
+  color: var(--color-ivory);
+  font-family: var(--font-accent);
+  letter-spacing: 0.03em;
+  font-size: 0.92rem;
+  margin-right: 0.35rem;
+}
+
+/* Callout Box: Analytical Takeaway */
+.takeaway-callout-box {
+  background: linear-gradient(135deg, rgba(197, 161, 90, 0.12) 0%, rgba(18, 60, 50, 0.3) 100%);
+  border-left: 3px solid var(--color-antique-gold);
+  border-radius: 0 8px 8px 0;
+  padding: 0.85rem 1.15rem;
+  margin-top: 0.25rem;
+}
+
+.callout-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-accent);
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold-bright);
+  margin-bottom: 0.3rem;
+}
+
+.callout-body {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--color-ivory);
+  line-height: 1.5;
+}
+
+/* Callout Box: Critical Question / Inquiry */
+.inquiry-callout-box {
+  background: linear-gradient(135deg, rgba(89, 43, 53, 0.25) 0%, rgba(11, 33, 29, 0.4) 100%);
+  border-left: 3px solid #E2A4AE;
+  border-radius: 0 8px 8px 0;
+  padding: 0.85rem 1.15rem;
+  margin-top: 0.25rem;
+}
+
+.inquiry-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-accent);
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #E2A4AE;
+  margin-bottom: 0.3rem;
+}
+
+.inquiry-body {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-parchment-soft);
+}
+
+/* Sub-Slide Footer Navigation Dock */
+.subslide-stepper-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(197, 161, 90, 0.2);
+  padding-top: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.stepper-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(18, 60, 50, 0.7);
+  border: 1px solid rgba(197, 161, 90, 0.35);
+  border-radius: 8px;
+  padding: 0.45rem 0.95rem;
+  color: var(--color-ivory);
+  font-family: var(--font-accent);
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.stepper-nav-btn:hover:not(:disabled) {
+  background: rgba(197, 161, 90, 0.2);
+  border-color: var(--color-antique-gold);
+  color: var(--color-antique-gold-bright);
+}
+
+.stepper-nav-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.stepper-progress-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.progress-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(197, 161, 90, 0.3);
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.progress-dot.active {
+  width: 22px;
+  border-radius: 4px;
+  background: var(--color-antique-gold-bright);
+  box-shadow: 0 0 10px var(--color-antique-gold-glow);
+}
+
+/* ==========================================================================
+   CINEMATIC SLIDE PRESENTATION STYLES (16:9 PROJECTOR OPTIMIZED)
+   ========================================================================== */
+.cinematic-slide-stage {
+  box-sizing: border-box;
+}
+
+@keyframes slowKenBurns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.06) translate(-1%, -0.5%);
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+}
+
+.slow-ken-burns {
+  animation: slowKenBurns 28s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.no-motion {
+  transform: none !important;
+  animation: none !important;
+}
+
+/* Atmospheric Glow Accents */
+.theme-warm-amber {
+  box-shadow: inset 0 0 100px rgba(197, 161, 90, 0.15);
+}
+
+.theme-fire-ember {
+  box-shadow: inset 0 0 120px rgba(180, 50, 30, 0.22);
+}
+
+.theme-water-reflection {
+  box-shadow: inset 0 0 120px rgba(40, 140, 160, 0.2);
+}
+
+.theme-shadow-court {
+  box-shadow: inset 0 0 140px rgba(0, 0, 0, 0.95);
+}
+
+.theme-blood-battle {
+  box-shadow: inset 0 0 120px rgba(120, 20, 30, 0.28);
+}
+
+.theme-snow-ice {
+  box-shadow: inset 0 0 120px rgba(180, 210, 230, 0.18);
+}
+
+.theme-transcendent-gold {
+  box-shadow: inset 0 0 140px rgba(226, 194, 126, 0.3);
+}
+
+/* ==========================================================================
+   GOLDEN LIGHTS & PPT PRESENTATION ANIMATION SYSTEM
+   ========================================================================== */
+
+@keyframes pptSlideFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.98) translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes pptPhotoIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes pptTextIn {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes goldenAuraPulse {
+  0%, 100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes goldenBokehDrift {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(-25px) translateX(15px) scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0.25;
+  }
+}
+
+.golden-lights-backdrop {
+  background: radial-gradient(circle at 18% 22%, rgba(245, 197, 66, 0.18) 0%, transparent 55%),
+              radial-gradient(circle at 82% 78%, rgba(229, 169, 50, 0.14) 0%, transparent 50%),
+              radial-gradient(circle at 50% 50%, rgba(26, 20, 14, 0.95) 0%, #0A0807 100%);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFFDF5 0%, #FFE89E 35%, #F5C542 70%, #E5A932 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-glow-border {
+  border: 1.5px solid rgba(245, 197, 66, 0.55);
+  box-shadow: 0 0 25px rgba(245, 197, 66, 0.2), inset 0 0 15px rgba(245, 197, 66, 0.08);
+}

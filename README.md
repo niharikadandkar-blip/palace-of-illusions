@@ -8,22 +8,28 @@ Narrated from the intimate first-person perspective of **Panchaali / Draupadi (K
 
 ## 🌟 Features & Highlights
 
-- **Monumental Architectural Gateway**: Carved sandstone royal entrance with interactive diya oil-lamp glow controls, atmospheric ambient sound, and realistic royal double-door entry animation.
-- **12 Interactive Story Chambers**:
-  1. *The Gateway of Fire & Destiny* — Monumental palace entrance & soundscapes.
-  2. *The Audience Chamber* — Interactive audience poll question before entering.
-  3. *The Sacred Tome* — Historical context, Chitra Banerjee Divakaruni's vision, and epic themes.
-  4. *The Character Atlas* — Interactive visual roster of heroes with detailed hover & click dossiers.
-  5. *Meet Krishnaa* — Draupadi's birth from sacrificial fire and her master portrait.
-  6. *The Hall of Wonders (Maya Sabha)* — Architecture of illusion, water-mirrors, and Duryodhana's fateful stumble.
-  7. *The Dice Hall (Dyuta Sabha)* — The fateful wager, disrobing trial, and Draupadi's unyielding defiance.
-  8. *The Karna Dilemma* — Forbidden longing, secret recognition, and moral complexity.
-  9. *The Battlefield of Kurukshetra* — Cost of war, blood-soaked sands, and true price of victory.
-  10. *Why Retell the Epic?* — Feminist reclamation, subversive sub-text, and modern resonance.
-  11. *Critical Acclaim & Reflections* — Curated literary reviews, student quotes, and discussion sparks.
-  12. *The Final Ascent* — Draupadi's ascent through the Himalayas and interactive discussion prompts.
-- **Uncompromised HD Imagery**: 19 curated high-resolution character portraits and chamber paintings presented with dark royal museum framing and zero cropping (`object-fit: contain`).
-- **Chamber Navigation HUD**: Quick chamber selector, keyboard navigation (Left/Right arrows), and audio control toggle.
+- **Monumental Architectural Gateway**: Carved sandstone royal entrance with interactive 3D double-door entry animation, presentation purpose banner, and 12-chamber roadmap preview.
+- **12 Content-Rich Presentation Chambers (Self-Sufficient Slide Deck)**:
+  1. *Enter the Palace* — Group presentation intro, novel context, authorial purpose, and speaker allocation.
+  2. *The Book* — Divakaruni’s premise, setting, accessible 5-point Mahabharata summary for beginners, and fiction vs. Sanskrit canon.
+  3. *A Different Voice* — From object to subject: centring Draupadi’s first-person voice, interiority, and critical limitations of a single lens.
+  4. *Born of Fire — Desires and Destiny* — Sacrificial fire birth, the dark complexion (Krishnaa), choice vs. destiny, polyandry, and agency beyond men.
+  5. *The Maya Sabha — A Palace of Illusions* — Architectural wonder, appearance vs. reality, hubris of power, and Duryodhana’s fatal stumble.
+  6. *The Dice Hall* — The rigged gamble, Yudhishthira’s breakdown of duty, Draupadi’s constitutional inquiry, and the silence of the elders.
+  7. *Karna — Sympathy and Accountability* — Outcast origins, loyalty to Duryodhana, and the vital distinction between understanding pain and excusing harm.
+  8. *The Cost of Victory* — The Kurukshetra slaughter, the hollow throne, the murdered Upapandavas, and Draupadi’s awakening on the futility of vengeance.
+  9. *Why Retell the Story?* — Centering marginalized perspectives, evaluating strengths vs. limitations, and assessing Divakaruni’s craft.
+  10. *The Reader's Verdict* — Critical evaluation, nuanced questions on female representation, and verified press reviews (Kirkus, Publishers Weekly, Booklist).
+  11. *Beyond the Illusion* — Suspenseful reveal: the imagined emotional bond between Draupadi and Karna, creative fiction vs. canon, and the central literary debate.
+  12. *Audience Verdict — The Final Door* — Journey synthesis, live interactive audience voting poll, and final closing reflection with presenter credits.
+- **Speaker Presentation Allocation (6 Students)**:
+  - **Speaker 1**: Chambers 1 & 2 (Opening & The Book)
+  - **Speaker 2**: Chambers 3 & 4 (A Different Voice & Born of Fire)
+  - **Speaker 3**: Chambers 5 & 6 (The Maya Sabha & The Dice Hall)
+  - **Speaker 4**: Chambers 7 & 8 (Karna & The Cost of Victory)
+  - **Speaker 5**: Chambers 9 & 10 (Why Retell the Story? & The Reader's Verdict)
+  - **Speaker 6 & All**: Chambers 11 & 12 (Beyond the Illusion & Audience Verdict)
+- **Classroom & Projector Optimized**: Complete, natural sentences on screen with zero overlap, tabbed sub-slides within each chamber, large high-contrast typography, and full keyboard navigation (Space / Arrow keys).
 
 ---
 
